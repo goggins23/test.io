@@ -1,0 +1,100 @@
+@font-face { font-family: Product; src: url('../fonts/Product\ Sans\ Bold.ttf'); } 
+
+:root {
+    --primary-color: #FF6B6B;     /* Bright coral red */
+    --secondary-color: #4ECDC4;   /* Teal green */
+    --background-color: #F7FFF7;  /* Very light mint green */
+    --text-color: #333;           /* Dark gray for text */
+}
+
+body {
+    background:url('../images/rest1.jpg');
+    background-position:auto;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: 'Product';
+}
+
+
+
+
+/* Navbar custom styling */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+.contact-section {
+    padding: 50px 0;
+    flex: 1; /* Allows content to expand and push footer to bottom */
+    margin-top: 5%;
+}
+.contact-info {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+.contact-form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+@media only screen and (max-width: 770px){
+    .contact-form {
+        margin-top: 20px;
+    }
+}
+
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+
+}
+
+.borderradius50px{
+    border-radius: 50px;
+}
+.borderradius30px{
+    border-radius: 30px;
+}
+.borderradius20px{
+    border-radius: 20px;
+}
+.dropshadow{
+    filter: drop-shadow(0px 0px 5px rgba(50, 50, 50, .5));
+}
+.btnpress{
+    filter: drop-shadow(0px 0px 5px rgba(50, 50, 50, .5));
+}
+
+.btnpress:active{
+    box-shadow: inset rgba(50, 50, 50, 0.5) 2px 2px 2px 2px;
+}
+.btnpress:hover{
+    filter: drop-shadow(0px 0px 5px rgba(50, 50, 50, 0));
+}
